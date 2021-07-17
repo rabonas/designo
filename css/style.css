@@ -1,0 +1,419 @@
+@import url(./icon.css);
+
+body {
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ============================
+            HEADER
+============================ */
+
+.header-links {
+    padding: 64px 0;
+}
+
+.container {
+    max-width: 1111px;
+    margin: 0 auto;
+}
+
+.header-link {
+    font-size: 14px;
+    margin-left: 42px;
+    letter-spacing: 2px;
+    color: #333136;
+}
+
+.header-link:hover {
+    text-decoration-line: underline;
+    color: #333136;
+}
+
+/* ============================
+        SECTION-INTRO
+============================ */
+
+.hero {
+    background-image: url(../img/header-bg.jpg);
+    padding: 145px 95px;
+    border-radius: 8px;
+}
+
+.intro-text {
+    width: 540px;
+}
+
+.intro-title {
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 32px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.intro-write {
+    width: 445px;
+    margin-bottom: 40px;
+}
+
+.learn-more {
+    padding: 18px 24px;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #333136;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+/* ============================
+        SECTION-SERVICES
+============================ */
+
+.services {
+    padding: 160px 0;
+}
+
+.web, .app, .graphic {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.web {
+    background-image: url(../img/laptop-img.jpg);
+    padding: 273px 0;
+}
+
+.app {
+    background-image: url(../img/app.jpg);
+    padding: 107px 0;
+}
+
+.graphic {
+    background-image: url(../img/graphic.jpg);
+    padding: 107px 0;
+}
+
+.active {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:rgba(231, 130, 107, 0);
+    border-radius: 15px;
+    z-index: 0;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.web:active .active {
+    transform: scale(1);
+    background-color: rgba(170, 76, 55, 0.8);
+}
+
+.app:active .active {
+    transform: scale(1);
+    background-color: rgba(170, 76, 55, 0.8);
+}
+
+.graphic:active .active {
+    transform: scale(1);
+    background-color: rgba(170, 76, 55, 0.8);
+}
+
+.services-title {
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    z-index: 1;
+}
+
+.view {
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+
+/* ============================
+        SECTION-FEATURES
+============================ */
+
+.features {
+    background: url(../img/Rectangle\ Copy\ 4.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding-bottom: 280px;
+}
+
+.features-title {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 48px 0 32px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: #333136;
+}
+
+.features-text {
+    line-height: 26px;
+    color: #333136;
+}
+
+
+/* ============================
+        GET-IN-TOUCH
+============================ */
+
+.get-in-touch {
+    /* position: relative; */
+    padding: 50px;
+}
+
+.get-in {
+    position: absolute;
+    background: url(../img/get\ in\ touch.jpg);
+    padding: 72px 0;
+    left: 0;
+    bottom: -122px;
+    border-radius: 15px;
+}
+
+.lets-talk {
+    width: 500px;
+}
+
+.lets-talk-title {
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.lets-talk-text {
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.get {
+    font-weight: 500;
+    font-size: 15px;
+    padding: 17px 19px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #333136;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+/* ============================
+            FOOTER
+============================ */
+
+.footer-links {
+    padding: 144px 0 72px;
+    background-color: #1D1C1E;
+}
+
+.nav {
+    margin-bottom: 40px;
+}
+
+.footer-link {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-left: 42px;
+    color: #FFFFFF;
+}
+
+.footer-link:hover {
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.footer-addresses {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.footer-address {
+    width: 250px;
+    margin-top: 31px;
+}
+
+.layout a {
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.bold {
+    display: block;
+    font-weight: bold;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.footer-icon a {
+    margin-left: 16px;
+    color: #E7816B;
+}
+
+
+
+/* =========================
+        SECTION-ABOUT
+======================== */
+
+.about {
+    padding-bottom: 160px;
+}
+
+.bg-about {
+    background: url(../img/abou-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.about-text, .deal-text {
+    margin-left: 95px;
+    width: 450px;
+}
+
+.talent-text {
+    margin-right: 95px;
+    width: 450px;
+}
+
+/* =========================
+       SECTION-TALENT
+======================== */
+
+.bg-talent {
+    background: url(../img/bg-talent.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.same-title {
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 24px;
+    color: #E7816B;
+}
+
+/* =========================
+    SECTION-LOCATIONS
+======================== */
+
+.locations {
+    padding: 160px 0;
+}
+
+.city-name {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin: 48px 0 50px;
+    color: #333136;
+}
+
+.see-location {
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #E7816B;
+    border-radius: 8px;
+}
+
+/* =========================
+        SECTION-DEAL
+======================== */
+
+.bg-deal {
+    background: url(../img/bg-deal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.deal, .location {
+    padding-bottom: 330px;
+}
+
+
+/* ==============================
+        SECTION-LOCATION
+============================== */
+
+.city {
+    width: 730px;
+    background-image: url(../img/location-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    margin-bottom: 32px;
+}
+
+.map {
+    width: 350px;
+    border-radius: 15px;
+    margin-bottom: 32px;
+}
+
+.office-title {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333136;
+}
+
+.contact-title {
+    margin-top: 73px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333136;
+}
+
+
+
+/* =========================
+    SECTION-CONTACT-US
+========================= */
+
+.bg-contact {
+    background-image: url(../img/contact-us-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.contact-us-text {
+    width: 445px;
+}
