@@ -20,18 +20,21 @@
 </head>
 <body>
 
-    <header class="header-links">
+    <header id="mainHeader" class="header-links">
 
         <div class="container">
             <div class="row justify-content-between">
 
-                <img src="../img/logo.svg" class="col-auto" alt="logo designo">
+                <a href="#" class="col-auto p-0"><img src="../img/logo.svg" alt="logo designo"></a>
 
-                <nav class="header-nav col-auto">
+                <nav id="mainnav" class="header-nav col-auto">
                     <a href="./about.html" class="header-link">OUR COMPANY</a>
                     <a href="./locations.html" class="header-link">LOCATIONS</a>
                     <a href="./contact.html" class="header-link">CONTACT</a>
                 </nav>
+                
+                <button class="menu-toggle open col-auto" onclick="openMenu()"><img src="../img/menu.svg" alt="menu"></button>
+                <button class="menu-toggle close col-auto" onclick="closeMenu()"><img src="../img/close.svg" alt="close"></button>
 
             </div>
         </div>
@@ -39,31 +42,128 @@
     </header>
 
     <section class="contact-us">
-        <div class="container bg-contact">
-            <div class="row justify-content-around">
+        <div class="container mobile">
+            <div class="bg-contact">
+                <div class="row justify-content-around align-items-center">
 
-                <div class="contact-us-text col-auto">
-                    <h1 class="intro-title">Contact Us</h1>
-                    <p class="text-white">Ready to take it to the next level? Let’s talk about your project or idea and find out how we can help your business grow. If you are looking for unique digital experiences that’s relatable to your users, drop us a line.</p>
+                    <div class="contact-us-text col-auto">
+                        <h1 class="intro-title">Contact Us</h1>
+                        <p class="text-white contact-us-write">Ready to take it to the next level? Let’s talk about your project or idea and find out how we can help your business grow. If you are looking for unique digital experiences that’s relatable to your users, drop us a line.</p>
+                    </div>
+    
+                    <form action="/" class="col-auto contact-form position-relative">
+    
+                        <input type="text" placeholder="Name" class="d-block contact-input">
+                        <div class="focus">
+                            <span class="focus-text">Can’t be empty  <img src="../img/warning.svg" alt="warning"></span>
+                        </div>
+    
+                        <input type="email" placeholder="Email Address" class="d-block contact-input">
+                        <div class="focus mail">
+                            <span class="focus-text">Can’t be empty  <img src="../img/warning.svg" alt="warning"></span>
+                        </div>
+    
+                        <input type="tel" placeholder="Phone" class="d-block contact-input">
+                        <div class="focus tel">
+                            <span class="focus-text">Can’t be empty  <img src="../img/warning.svg" alt="warning"></span>
+                        </div>
+    
+                        <textarea name="message" id="message" class="d-block contact-input mb-4 contact-textarea" placeholder="Your Message"></textarea>
+    
+                        <button type="submit" class="submit same-link">Submit</button>
+    
+                    </form>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="locations contact-locations">
+        <div class="container">
+            <div class="row justify-content-between">
+
+                <div class="col-lg-4 areas text-center col-auto">
+                    <img src="../img/canada.png" alt="canada">
+                    <h3 class="city-name">CANADA</h3>
+                    <a href="./locations.html" class="see-location same-link">SEE LOCATION</a>
                 </div>
 
-                <form action="/" class="col-auto">
+                <div class="col-lg-4 areas text-center col-auto">
+                    <img src="../img/australia.png" alt="australia">
+                    <h3 class="city-name">AUSTRALIA</h3>
+                    <a href="./locations.html" class="see-location same-link">SEE LOCATION</a>
+                </div>
 
-                    <input type="text" placeholder="Name" class="d-block">
-
-                    <input type="email" placeholder="Email Address" class="d-block">
-
-                    <input type="tel" placeholder="Phone" class="d-block">
-
-                    <textarea name="message" id="message" class="d-block" placeholder="Your Message"></textarea>
-
-                    <button type="submit">Submit</button>
-
-                </form>
+                <div class="col-lg-4 areas text-center col-auto">
+                    <img src="../img/united.png" alt="united">
+                    <h3 class="city-name">UNITED KINGDOM</h3>
+                    <a href="./locations.html" class="see-location same-link">SEE LOCATION</a>
+                </div>
 
             </div>
         </div>
     </section>
+
+
+    <footer class="footer-links contact-footer">
+        <div class="container">
+            <div class="row justify-content-between align-items-center nav">
+
+                <div class="col-auto footer-logo">
+                    <a href="#"><img src="../img/logo-white.svg" alt="loga designo"></a>
+                </div>
+
+                <nav class="footer-nav col-auto">
+                    <a href="./about.html" class="footer-link">OUR COMPANY</a>
+                    <a href="./locations.html" class="footer-link">LOCATIONS</a>
+                    <a href="./contact.html" class="footer-link">CONTACT</a>
+                </nav>
+
+            </div>
+
+            <div class="row justify-content-between align-items-end footer-addresses">
+
+                <address class="col-auto layout footer-address">
+                    <a href="./locations.html"><span class="bold">Designo Central Office</span> 3886 Wellington Street Toronto, Ontario M9C 3J5</a>
+                </address>
+
+                <address class="col-auto layout footer-address">
+                    <a href="#" class="bold">Contact Us (Central Office)</a>
+                    <a href="tel:+1 253-863-8967" class="bold">P : +1 253-863-8967</a>
+                    <a href="https://contact@designo.co" class="bold">M : contact@designo.co</a>
+                </address>
+
+                <address class="col-auto footer-address footer-icon">
+                    <a href="https://www.facebook.com/"><span class="icon-Path"></span></a>
+                    <a href="https://www.youtube.com/"><span class="icon-youtube"></span></a>
+                    <a href="https://twitter.com/"><span class="icon-twitter"></span></a>
+                    <a href="https://www.pinterest.com"><span class="icon-pinterest"></span></a>
+                    <a href="https://www.instagram.com/"><span class="icon-instagram"></span></a>
+                </address>
+            </div>
+    
+        </div>
+    </footer>
+
+
+    <script>
+
+        const menu = document.getElementById('mainnav');
+        const header = document.getElementById('mainHeader');
+  
+        function openMenu() {
+            menu.style.display = 'block';
+            header.classList = 'header-links on';
+        }
+  
+        function closeMenu() {
+            menu.style.display = 'none';
+            header.classList = 'header-links';
+        }
+  
+    </script>
     
 </body>
 </html>

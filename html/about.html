@@ -20,18 +20,21 @@
 </head>
 <body>
 
-    <header class="header-links">
+    <header id="mainHeader" class="header-links">
 
         <div class="container">
-            <div class="row justify-content-between align-items-center">
+            <div class="row justify-content-between">
 
-                <img src="../img/logo.svg" class="col-auto" alt="logo designo">
+                <a href="#" class="col-auto p-0"><img src="../img/logo.svg" alt="logo designo"></a>
 
-                <nav class="header-nav col-auto">
+                <nav id="mainnav" class="header-nav col-auto">
                     <a href="./about.html" class="header-link">OUR COMPANY</a>
                     <a href="./locations.html" class="header-link">LOCATIONS</a>
                     <a href="./contact.html" class="header-link">CONTACT</a>
                 </nav>
+                
+                <button class="menu-toggle open col-auto" onclick="openMenu()"><img src="../img/menu.svg" alt="menu"></button>
+                <button class="menu-toggle close col-auto" onclick="closeMenu()"><img src="../img/close.svg" alt="close"></button>
 
             </div>
         </div>
@@ -39,35 +42,43 @@
     </header>
 
     <section class="about">
-        <div class="container bg-about">
-            <div class="row justify-content-between align-items-center">
+        <div class="container mobile">
+            <div class="bg-about">
+                <div class="row justify-content-between align-items-center">
 
-                <div class="about-text col-auto">
-                    <h1 class="intro-title">About Us</h1>
-                    <p class="about-write text-white">Founded in 2010, we are a creative agency that produces lasting results for our clients. We’ve partnered with many startups, corporations, and nonprofits alike to craft designs that make real impact. We’re always looking forward to creating brands, products, and digital experiences that connect with our clients’ audiences.</p>
+                    <div class="about-text col-auto">
+                        <h1 class="intro-title">About Us</h1>
+                        <p class="about-write text-white">Founded in 2010, we are a creative agency that produces lasting results for our clients. We’ve partnered with many startups, corporations, and nonprofits alike to craft designs that make real impact. We’re always looking forward to creating brands, products, and digital experiences that connect with our clients’ audiences.</p>
+                    </div>
+    
+                    <img src="../img/about-img.jpg" class="col-auto lg p-0" alt="works">
+                    <img src="../img/about-img-mini.jpg" class="p-0 tablet" alt="works">
+    
                 </div>
-
-                <img src="../img/about-img.jpg" class="col-auto p-0" alt="works">
-
             </div>
         </div>
     </section>
 
 
     <section class="talent">
-        <div class="container  bg-talent">
-            <div class="row justify-content-between align-items-center">
+        <div class="container mobile">
 
-                <img src="../img/talent.jpg" class="col-auto p-0" alt="talent">
+            <div class="bg-deal">
+                <div class="row justify-content-between align-items-center">
 
-                <div class="talent-text col-auto">
-                    <h2 class="same-title">World-class talent</h2>
-                    <p class="talent-write">We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully crafted from concept to launch, ensuring success in its given market. We are constantly updating our skills in a myriad of platforms.</p>
-
-                    <p>Our team is multi-disciplinary and we are not merely interested in form — content and meaning are just as important. We give great importance to craftsmanship, service, and prompt delivery. Clients have always been impressed with our high-quality outcomes that encapsulates their brand’s story and mission.</p>
+                    <img src="../img/talent.jpg" class="col-auto lg p-0" alt="talent">
+                    <img src="../img/talent-mini.jpg" class="p-0 tablet" alt="talent">
+    
+                    <div class="talent-text col-auto">
+                        <h2 class="same-title">World-class talent</h2>
+                        <p class="talent-write">We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully crafted from concept to launch, ensuring success in its given market. We are constantly updating our skills in a myriad of platforms.</p>
+    
+                        <p class="talent-write">Our team is multi-disciplinary and we are not merely interested in form — content and meaning are just as important. We give great importance to craftsmanship, service, and prompt delivery. Clients have always been impressed with our high-quality outcomes that encapsulates their brand’s story and mission.</p>
+                    </div>
+    
                 </div>
-
             </div>
+
         </div>
     </section>
 
@@ -76,22 +87,22 @@
         <div class="container">
             <div class="row justify-content-between">
 
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 areas text-center col-auto">
                     <img src="../img/canada.png" alt="canada">
                     <h3 class="city-name">CANADA</h3>
-                    <a href="./locations.html" class="see-location">SEE LOCATION</a>
+                    <a href="./locations.html" class="see-location same-link">SEE LOCATION</a>
                 </div>
 
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 areas text-center col-auto">
                     <img src="../img/australia.png" alt="australia">
                     <h3 class="city-name">AUSTRALIA</h3>
-                    <a href="./locations.html" class="see-location">SEE LOCATION</a>
+                    <a href="./locations.html" class="see-location same-link">SEE LOCATION</a>
                 </div>
 
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 areas text-center col-auto">
                     <img src="../img/united.png" alt="united">
                     <h3 class="city-name">UNITED KINGDOM</h3>
-                    <a href="./locations.html" class="see-location">SEE LOCATION</a>
+                    <a href="./locations.html" class="see-location same-link">SEE LOCATION</a>
                 </div>
 
             </div>
@@ -100,33 +111,37 @@
 
 
     <section class="deal">
-        <div class="container  bg-deal">
-            <div class="row justify-content-between align-items-center">
+        <div class="container mobile">
+            <div class="bg-deal">
+                <div class="row justify-content-between align-items-center">
 
-                <div class="deal-text col-auto">
-                    <h2 class="same-title">The real deal</h2>
-                    <p class="deal-write">As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own. Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every opportunity. We make design and technology more accessible and give you tools to measure success.</p>
-                    <p>We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, we inspire audiences to take action and drive real results.</p>
+                    <div class="deal-text col-auto">
+                        <h2 class="same-title">The real deal</h2>
+                        <p class="deal-write">As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own. Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every opportunity. We make design and technology more accessible and give you tools to measure success.</p>
+                        <p class="deal-write">We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, we inspire audiences to take action and drive real results.</p>
+                    </div>
+
+                    <img src="../img/deal.jpg" class="col-auto lg p-0" alt="real deal">
+                    <img src="../img/deal-mini.jpg" class="p-0 tablet" alt="real deal">
+
                 </div>
-
-                <img src="../img/deal.jpg" class="col-auto p-0" alt="real deal">
-
             </div>
+            
         </div>
     </section>
 
 
     <section class="get-in-touch">
         <div class="container position-relative">
-            <div class="container get-in">
-                <div class="row justify-content-around align-items-center">
+            <div class="get-in">
+                <div class="row justify-content-evenly align-items-center">
 
                     <div class="lets-talk col-auto">
                         <h2 class="lets-talk-title">Let’s talk about your project</h2>
                         <p class="lets-talk-text">Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
                     </div>
     
-                    <a href="./contact.html" class="col-auto get">Get in touch</a>
+                    <a href="./contact.html" class="col-auto get same-link">Get in touch</a>
     
                 </div>
             </div>
@@ -138,7 +153,9 @@
         <div class="container">
             <div class="row justify-content-between align-items-center nav">
 
-                <img src="../img/logo-white.svg" class="col-auto" alt="loga designo">
+                <div class="footer-logo col-auto">
+                    <a href="#"><img src="../img/logo-white.svg" alt="loga designo"></a>
+                </div>
 
                 <nav class="footer-nav col-auto">
                     <a href="./about.html" class="footer-link">OUR COMPANY</a>
@@ -171,6 +188,25 @@
     
         </div>
     </footer>
+
+
+
+    <script>
+
+        const menu = document.getElementById('mainnav');
+        const header = document.getElementById('mainHeader');
+  
+        function openMenu() {
+            menu.style.display = 'block';
+            header.classList = 'header-links on';
+        }
+  
+        function closeMenu() {
+            menu.style.display = 'none';
+            header.classList = 'header-links';
+        }
+  
+    </script>
     
 </body>
 </html>

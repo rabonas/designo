@@ -1,0 +1,394 @@
+@media (max-width: 1199px){
+
+    .intro::after {
+        width: 990px;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .about-text, .deal-text {
+        margin-left: 50px;
+        width: 390px;
+    }
+
+    .talent-text {
+        margin-right: 50px;
+        width: 390px;
+    }
+
+    .city {
+        width: 585px;
+    }
+
+    .map {
+        width: 335px;
+    }
+}
+
+
+@media (max-width: 991px){
+
+    .features-col {
+        width: 33.3%;
+    }
+
+     ::after {
+        display: none;
+    }
+
+    .features {
+        background-image: none;
+    }
+
+    .graphic, .app {
+        padding: 53px 0;
+    }
+
+    .web {
+        padding: 53px 0;
+        margin-bottom: 24px;
+    }
+
+    .lets-talk {
+        width: 410px;
+    }
+
+    .locations .row {
+        flex-wrap: nowrap;
+    }
+
+    .areas {
+        padding: 0;
+    }
+
+    .deal, .location {
+        padding-bottom: 200px;
+    }
+
+    .lg {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+        order: -1;
+    }
+
+    .map-tablet {
+        display: block;
+        width: 100%;
+        margin-bottom: 24px;
+        border-radius: 15px;
+    }
+
+    .city {
+        width: 100%;
+        padding: 88px 0;
+        margin-bottom: 120px;
+    }
+
+    .city1 {
+        order: -1;
+    }
+
+    .city2 {
+        order: 1;
+    }
+
+    .city3 {
+        order: 3;
+    }
+
+    .map1 {
+        order: -2;
+    }
+
+    .map2 {
+        order: 0;
+    }
+
+    .map3 {
+        order: 2;
+    }
+
+    .about-text, .deal-text, .talent-text {
+        width: 500px;
+        margin: 68px auto;
+        text-align: center;
+    }
+
+    .contact-us-text, .contact-input {
+        width: 510px;
+    }
+}
+
+
+@media (max-width: 767px){
+
+    .header-link {
+        margin-left: 10px;
+        display: block;
+        font-size: 24px;
+        color: #fff;
+        padding: 16px 0;
+    }
+
+    .header-link:hover {
+        color: #fff;
+        text-shadow: 4px -2px 3px rgb(229 233 246 / 70%);
+    }
+
+    .header-nav {
+        display: none;
+        position: absolute;
+        top: 95px;
+        left: 0;
+        right: 0;
+        padding: 20px 0 0 60px;
+        height: 40vh;
+        background: #000000;
+        z-index: 2;
+    }
+
+    .header-links.on .header-nav {
+        transform: scale(1);
+        border-radius: 0;
+    }
+
+    .header-links.on .menu-toggle.open {
+        display: block;
+    }
+
+    .header-links .menu-toggle.close {
+        display: none;
+    }
+
+    .header-links.on .menu-toggle.open {
+        display: none;
+    }
+
+    .header-links.on .menu-toggle.close {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+        border: none;
+        background: transparent;
+    }
+
+    .hero {
+        background-image: url(../img/header-bg-mini.jpg);
+        padding: 60px 0 500px;
+        text-align: center;
+    }
+
+    .services {
+        padding: 120px 0;
+    }
+
+    .features {
+        padding-bottom: 137px;
+    }
+
+    .features-col {
+        width: 100%;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    .features-title {
+        margin: 0 0 16px;
+    }
+
+    .about-features {
+        margin-left: 48px;
+    }
+
+    .intro-text {
+        width: 500px;;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .intro-title {
+        font-size: 40px;
+    }
+
+    .intro-write {
+        margin: 0 auto 40px;
+    }
+
+    .areas {
+        margin-bottom: 64px;
+    }
+
+    .get-in {
+        padding: 44px 0;
+        background-image: url(../img/get-in-touch.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .get-in .row, .footer-links .row, .locations .row {
+        display: block;
+        text-align: center;
+        margin: 0;
+        border: none;
+    }
+
+    .contact-us-text, .contact-input {
+        width: 445px;
+    }
+
+    .lets-talk {
+        margin: 0 auto 32px;
+    }
+
+    .footer-address {
+        margin: 40px auto;
+    }
+
+    .footer-link {
+        display: block;
+        margin: 32px;
+    }
+
+    .footer-logo {
+        padding-bottom: 32px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+}
+
+
+@media (max-width: 565px){
+
+    .header-links {
+        padding: 35px 0;
+    }
+
+    .city {
+        margin-bottom: 40px;
+        padding: 80px 0;
+    }
+
+    .mobile {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .hero, .bg-about, .bg-deal, .city, .map-tablet, .bg-contact {
+        border-radius: 0;
+    }
+
+    .hero {
+        padding-bottom: 450px;
+    }
+
+    .intro-title, .same-title, .lets-talk-title {
+        font-size: 32px;
+        margin-bottom: 24px;
+        line-height: 36px;
+    }
+
+    .features-col {
+        display: block;
+        text-align: center;
+    }
+
+    .intro-text {
+        width: 430px;
+    }
+
+    .web, .app, .graphic {
+        padding: 90px 0;
+    }
+
+    .intro-write, .lets-talk-text, .about-write, .talent-text, .deal-write, .office p, .contact p, .contact-us-write{
+        font-size: 15px;
+    }
+
+    .about-features {
+        margin-left: 0;
+    }
+
+    .get-in {
+        padding: 64px 0;
+        bottom: -205px;
+        left: -25px;
+        right: -25px;
+    }
+
+    .footer-links {
+        padding: 253px 0 64px;
+    }
+
+    .contact-footer {
+        padding: 64px 0;
+    }
+
+    .about {
+        padding: 0;
+    }
+
+    .map-tablet,.row {
+        margin: 0;
+    }
+
+
+}
+
+
+@media (max-width: 480px){
+
+    .hero {
+        padding-bottom: 350px;
+    }
+
+    .intro-text {
+        width: 299px;
+    }
+
+    .intro-write {
+        width: 100%;
+    }
+
+    .features-col {
+        width: 90%;
+        margin: 0 auto 32px;
+    }
+
+    .services-title {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .get-in {
+        padding: 44px 0;
+    }
+
+    .city {
+        display: block;
+        text-align: center;
+    }
+
+    .contact-us-text, .contact-input {
+        width: 290px;
+    }
+
+    .contact-us-text {
+        text-align: center;
+    }
+
+    .contact-form {
+        text-align: center;
+    }
+
+
+}
+

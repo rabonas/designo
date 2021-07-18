@@ -20,18 +20,21 @@
 </head>
 <body>
 
-    <header class="header-links">
+    <header id="mainHeader" class="header-links">
 
         <div class="container">
             <div class="row justify-content-between">
 
-                <img src="../img/logo.svg" class="col-auto" alt="logo designo">
+                <a href="#" class="col-auto p-0"><img src="../img/logo.svg" alt="logo designo"></a>
 
-                <nav class="header-nav col-auto">
+                <nav id="mainnav" class="header-nav col-auto">
                     <a href="./about.html" class="header-link">OUR COMPANY</a>
                     <a href="./locations.html" class="header-link">LOCATIONS</a>
                     <a href="./contact.html" class="header-link">CONTACT</a>
                 </nav>
+                
+                <button class="menu-toggle open col-auto" onclick="openMenu()"><img src="../img/menu.svg" alt="menu"></button>
+                <button class="menu-toggle close col-auto" onclick="closeMenu()"><img src="../img/close.svg" alt="close"></button>
 
             </div>
         </div>
@@ -39,9 +42,9 @@
     </header>
 
     <section class="location">
-        <div class="container">
+        <div class="container mobile">
             <div class="row justify-content-between">
-                <div class="city col-auto d-flex justify-content-center align-items-center justify-content-evenly">
+                <div class="city city1 col-auto">
 
                     <div class="office col-auto">
                         <h2 class="same-title">Canada</h2>
@@ -59,15 +62,17 @@
 
                 </div>
 
-                <div class="col-auto p-0">
-                    <img src="../img/map-canada.jpg" class="p-0 map" alt="">
-                </div>
+                <!-- <div class="col-auto p-0"> -->
+                    <img src="../img/map-canada.jpg" class="p-0 lg map" alt="map canada">
+                    <img src="../img/map-canada-mini.jpg" class="map-tablet map1 p-0" alt="map canada">
+                <!-- </div> -->
 
-                <div class="col-auto p-0">
-                    <img src="../img/map-australia.jpg" class="p-0 map" alt="">
-                </div>
+                <!-- <div class="col-auto p-0"> -->
+                    <img src="../img/map-australia.jpg" class="p-0 lg map" alt="map australia">
+                    <img src="../img/map-australia-mini.jpg" class="map-tablet map2 p-0" alt="map australia">
+                <!-- </div> -->
 
-                <div class="city col-auto d-flex justify-content-center align-items-center justify-content-evenly">
+                <div class="city city2 col-auto">
 
                     <div class="office col-auto">
                         <h2 class="same-title">Australia</h2>
@@ -84,7 +89,7 @@
 
                 </div>
 
-                <div class="city col-auto d-flex justify-content-center align-items-center">
+                <div class="city city3 col-auto">
 
                     <div class="office col-auto">
                         <h2 class="same-title">United Kingdom</h2>
@@ -101,9 +106,10 @@
 
                 </div>
 
-                <div class="col-auto p-0">
-                    <img src="../img/map-united.jpg" class="p-0 map" alt="">
-                </div>
+                <!-- <div class="col-auto p-0"> -->
+                    <img src="../img/map-united.jpg" class="p-0 lg map" alt="map united">
+                    <img src="../img/map-united-mini.jpg" class="map-tablet map3 p-0" alt="map united">
+                <!-- </div> -->
 
             </div>
         </div>
@@ -112,15 +118,15 @@
 
     <section class="get-in-touch">
         <div class="container position-relative">
-            <div class="container get-in">
-                <div class="row justify-content-around align-items-center">
+            <div class="get-in">
+                <div class="row justify-content-evenly align-items-center">
 
                     <div class="lets-talk col-auto">
                         <h2 class="lets-talk-title">Let’s talk about your project</h2>
                         <p class="lets-talk-text">Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
                     </div>
     
-                    <a href="./contact.html" class="col-auto get">Get in touch</a>
+                    <a href="./contact.html" class="col-auto get same-link">Get in touch</a>
     
                 </div>
             </div>
@@ -132,7 +138,9 @@
         <div class="container">
             <div class="row justify-content-between align-items-center nav">
 
-                <img src="../img/logo-white.svg" class="col-auto" alt="loga designo">
+                <div class="footer-logo col-auto">
+                    <a href="#"><img src="../img/logo-white.svg" alt="loga designo"></a>
+                </div>
 
                 <nav class="footer-nav col-auto">
                     <a href="./about.html" class="footer-link">OUR COMPANY</a>
@@ -166,6 +174,24 @@
     
         </div>
     </footer>
+
+
+    <script>
+
+        const menu = document.getElementById('mainnav');
+        const header = document.getElementById('mainHeader');
+  
+        function openMenu() {
+            menu.style.display = 'block';
+            header.classList = 'header-links on';
+        }
+  
+        function closeMenu() {
+            menu.style.display = 'none';
+            header.classList = 'header-links';
+        }
+  
+    </script>
 
 </body>
 </html>

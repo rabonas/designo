@@ -20,19 +20,22 @@
 </head>
 <body>
 
-    <header class="header-links">
+    <header id="mainHeader" class="header-links">
 
         <div class="container">
             <div class="row justify-content-between">
 
-                <img src="../img/logo.svg" class="col-auto" alt="logo designo">
+                <a href="#" class="col-auto p-0"><img src="../img/logo.svg" alt="logo designo"></a>
 
-                <nav class="header-nav col-auto">
+                <nav id="mainnav" class="header-nav col-auto">
                     <a href="./about.html" class="header-link">OUR COMPANY</a>
                     <a href="./locations.html" class="header-link">LOCATIONS</a>
                     <a href="./contact.html" class="header-link">CONTACT</a>
                 </nav>
                 
+                <button class="menu-toggle open col-auto" onclick="openMenu()"><img src="../img/menu.svg" alt="menu"></button>
+                <button class="menu-toggle close col-auto" onclick="closeMenu()"><img src="../img/close.svg" alt="close"></button>
+
             </div>
         </div>
 
@@ -40,13 +43,17 @@
 
 
     <section class="intro">
-        <div class="container hero">
+        <div class="container mobile">
 
-            <div class="intro-text col-auto">
+            <div class="hero">
+                <div class="intro-text col-auto">
                 <h1 class="intro-title">Award-winning custom designs and digital branding solutions</h1>
                 <p class="intro-write text-white">With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</p>
-                <a href="./about.html" class="learn-more mb-1">Learn More</a>
+                <a href="./about.html" class="learn-more mb-1 same-link">Learn More</a>
             </div>
+        </div>
+
+            
 
         </div>
     </section>
@@ -88,22 +95,28 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 features-col col-auto p-0">
                     <img src="../img/passionate.png" alt="passionate">
-                    <h3 class="features-title">PASSIONATE</h3>
+                    <div class="about-features">
+                        <h3 class="features-title">PASSIONATE</h3>
                     <p class="features-text">Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions.</p>
+                    </div>
                 </div>
 
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 features-col col-auto p-0">
                     <img src="../img/resourceful.png" alt="resourceful">
-                    <h3 class="features-title">RESOURCEFUL</h3>
-                    <p class="features-text">Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients’ needs.</p>
+                    <div class="about-features">
+                        <h3 class="features-title">RESOURCEFUL</h3>
+                        <p class="features-text">Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients’ needs.</p>
+                    </div>
                 </div>
 
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 features-col col-auto p-0">
                     <img src="../img/friendly.png" alt="friendly">
-                    <h3 class="features-title">FRIENDLY</h3>
-                    <p class="features-text">We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.</p>
+                    <div class="about-features">
+                        <h3 class="features-title">FRIENDLY</h3>
+                        <p class="features-text">We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.</p>
+                    </div>
                 </div>
 
             </div>
@@ -112,15 +125,15 @@
 
     <section class="get-in-touch">
         <div class="container position-relative">
-            <div class="container get-in">
-                <div class="row justify-content-around align-items-center">
+            <div class="get-in">
+                <div class="row justify-content-evenly align-items-center">
 
                     <div class="lets-talk col-auto">
                         <h2 class="lets-talk-title">Let’s talk about your project</h2>
                         <p class="lets-talk-text">Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
                     </div>
     
-                    <a href="./contact.html" class="col-auto get">Get in touch</a>
+                    <a href="./contact.html" class="col-auto get same-link">Get in touch</a>
     
                 </div>
             </div>
@@ -132,7 +145,9 @@
         <div class="container">
             <div class="row justify-content-between align-items-center nav">
 
-                <img src="../img/logo-white.svg" class="col-auto" alt="loga designo">
+                <div class="col-auto footer-logo">
+                    <a href="#"><img src="../img/logo-white.svg" alt="loga designo"></a>
+                </div>
 
                 <nav class="footer-nav col-auto">
                     <a href="./about.html" class="footer-link">OUR COMPANY</a>
@@ -165,6 +180,23 @@
     
         </div>
     </footer>
+
+    <script>
+
+        const menu = document.getElementById('mainnav');
+        const header = document.getElementById('mainHeader');
+  
+        function openMenu() {
+            menu.style.display = 'block';
+            header.classList = 'header-links on';
+        }
+  
+        function closeMenu() {
+            menu.style.display = 'none';
+            header.classList = 'header-links';
+        }
+  
+    </script>
     
 </body>
 </html>
