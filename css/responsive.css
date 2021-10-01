@@ -133,11 +133,14 @@
         font-size: 24px;
         color: #fff;
         padding: 16px 0;
+        transform: scale(0.8);
+        transition: transform 0.5s linear;
     }
 
     .header-link:hover {
         color: #fff;
         text-shadow: 4px -2px 3px rgb(229 233 246 / 70%);
+        transform: scale(1);
     }
 
     .header-nav {
